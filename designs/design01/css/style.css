@@ -3,7 +3,7 @@
 ========================= */
 @font-face {
   font-family: 'Cafe24GoodNight';
-  src: url('../font/Cafe24Oneprettynight-v2.0.ttf') format('truetype');
+  src: url('../font/Cafe24Oneprettynight-v2.0.otf') format('opentype');
   font-weight: normal;
 }
 
@@ -13,11 +13,6 @@
   font-weight: 300;
 }
 
-@font-face {
-  font-family: 'NotoSansKR-Light';
-  src: url('../font/NotoSansKR-Light.ttf') format('opentype');
-  font-weight: 300;
-}
 
 @font-face {
   font-family: 'NotoSansKR-Regular';
@@ -25,11 +20,7 @@
   font-weight: 400;
 }
 
-@font-face {
-  font-family: 'NotoSansKR-ExtraBold';
-  src: url('../font/NotoSansKR-ExtraBold.ttf') format('opentype');
-  font-weight: 800;
-}
+
 /* =========================
    RESET
 ========================= */
