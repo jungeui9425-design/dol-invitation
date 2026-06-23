@@ -207,21 +207,21 @@ body {
   font-family: 'NotoSansKR-Light';
   font-size: 15px;
   margin-top: 4px;
-  color: #4c4742;
+  color: #766d63;
 }
 
 .place {
   font-family: 'NotoSansKR-Light';
   font-size: 15px;
   margin-top: 4px;
-  color: #4c4742;
+  color: #766d63;
 }
 
 .parents {
   font-family: 'NotoSansKR-Light';
   font-size: 13px;
   margin-top: 18px;
-  color: #4c4742;
+  color: #766d63;
 }
 
 .parents span {
@@ -736,4 +736,20 @@ body {
   opacity: 1;
   transform: translateY(0);
   transition: all .8s ease;
+}
+
+/* 실속형 달력 이미지 */
+.simple-calendar-img {
+  width: 100%;
+  text-align: center;
+  margin: 22px auto 0;
+  overflow: hidden;
+}
+
+.simple-calendar-img img {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin: 0 auto;
 }
