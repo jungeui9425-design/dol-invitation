@@ -207,21 +207,21 @@ body {
   font-family: 'NotoSansKR-Light';
   font-size: 15px;
   margin-top: 4px;
-  color: #7a7168;
+  color: #4c4742;
 }
 
 .place {
   font-family: 'NotoSansKR-Light';
   font-size: 15px;
   margin-top: 4px;
-  color: #7a7168;
+  color: #4c4742;
 }
 
 .parents {
   font-family: 'NotoSansKR-Light';
   font-size: 13px;
   margin-top: 18px;
-  color: #6e665e;
+  color: #4c4742;
 }
 
 .parents span {
@@ -272,7 +272,7 @@ body {
   font-size: 15.5px;
   line-height: 1.9;
   text-align: left;
-  color: #6f665e;
+  color: #4c4742;
 }
 
 /* =========================
@@ -289,7 +289,7 @@ body {
   align-items: center;
   column-gap: 8px;
   font-size: 19px;
-  color: #6f665e;
+  color: #4c4742;
   margin-bottom: 10px;
 }
 
@@ -337,13 +337,13 @@ body {
   font-family: 'Cafe24GoodNight';
   font-size: 17px;
   font-weight: 300;
-  color: #6f665e;
+  color: #4c4742;
   margin-bottom: 16px;
 }
 
 .pink {
   color: #dc627f;
-  font-size: 19px;
+  font-size: 21px;
   margin-bottom: 7px;
 }
 
@@ -361,7 +361,7 @@ body {
   margin-top: 18px;
   font-family: 'Cafe24GoodNight';
   font-size: 14px;
-  color: #7a7168;
+  color: #4c4742;
 }
 
 .calendar > div {
@@ -455,7 +455,7 @@ body {
   border: 1px solid #ded8d2;
   border-radius: 6px;
   font-size: 10px;
-  color: #5f5750;
+  color: #4c4742;
   text-decoration: none;
   font-family: 'NotoSansKR-Regular';
 
@@ -539,7 +539,7 @@ body {
 .gallery-count {
   font-family: 'NotoSansKR-Regular';
   font-size: 12px;
-  color: #6f665e;
+  color: #4c4742;
   margin-top: 14px;
 }
 
@@ -585,7 +585,7 @@ body {
   height: 26px;
   border: 1px solid #ddd5cf;
   background: #fafafa;
-  color: #6f665e;
+  color: #4c4742;
   font-size: 11px;
 }
 
@@ -602,7 +602,7 @@ body {
   padding: 0 8px 0 14px;
 
   font-size: 13px;
-  color: #6f665e;
+  color: #4c4742;
   font-family: 'NotoSansKR-Light';
 
   transition: height .3s ease, opacity .25s ease;
@@ -630,7 +630,7 @@ body {
   font-family: 'Cafe24GoodNight';
   font-size: 18px;
   line-height: 1.5;
-  color: #6f665e;
+  color: #4c4742;
 }
 
 
