@@ -1,0 +1,40 @@
+{
+  "page": {
+    "title": "유진이의 첫돌"
+  },
+  "baby": {
+    "name": "유진",
+    "title": "유진이의 첫돌"
+  },
+  "event": {
+    "date": "2028년 6월 6일(화)",
+    "time": "오후 1시 30분",
+    "fullDate": "2028년 6월 6일 화요일, 13시 30분",
+    "place": "비스타 워커힐 서울 명월관",
+    "address": "서울 광진구 워커힐로 177 워커힐 호텔앤리조트"
+  },
+  "parents": {
+    "father": {
+      "name": "이현오"
+    },
+    "mother": {
+      "name": "유정아"
+    }
+  },
+  "message": [
+    "유진이가 무럭무럭 자라",
+    "어느덧 첫 번째 생일을 맞았습니다.",
+    "사랑과 관심으로 유진이를 지켜봐주신",
+    "소중한 분들과 유진이의 첫생일을 함께 하고 싶어",
+    "작은 자리를 마련하였습니다.",
+    "발걸음하여 함께 축하해 주신다면 감사하겠습니다."
+  ],
+  "images": {
+    "introBaby": "Image_baby.png",
+    "messageLeft": "baby1.jpg",
+    "messageRight": "baby2.jpg",
+    "calendar": "calendar.png",
+    "preview": "preview.jpg"
+  },
+  "thanks": "유진이의 첫돌을<br>축하해 주셔서 감사합니다."
+}
