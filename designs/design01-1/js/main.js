@@ -295,9 +295,9 @@ function loadInvitationData() {
 function applyInvitationData(data) {
   setText("title", data.baby.title);
   setHTML(
-    "babySub",
-    "1년 동안 건강하게 자라준 " + data.baby.name + "의<br>첫 번째 생일을 축하해 주세요."
-  );
+     "babySub",
+     data.baby.subText
+    );
 
   setText("eventDate", data.event.date + ", " + data.event.time);
   setText("eventFullDate", data.event.date + ", " + data.event.time);
@@ -337,7 +337,7 @@ function applyInvitationData(data) {
   setText("fatherAccount", data.parents.father.account);
   setText("motherAccount", data.parents.mother.account);
 
-  setHTML("thanksText", data.baby.title + "을<br>축하해 주셔서 감사합니다.");
+  setHTML("thanksText", data.thanks);
 }
 
 /* =========================

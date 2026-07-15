@@ -1,0 +1,40 @@
+{
+  "page": {
+    "title": "온유의 첫돌"
+  },
+  "baby": {
+  "name": "온유",
+  "title": "온유의 첫돌",
+  "subText": "1년 동안 건강하게 자라준 온유의<br>첫 번째 생일을 축하해 주세요."
+  },
+  "event": {
+    "date": "2026년 8월 8일(토)",
+    "time": "오전 11시",
+    "fullDate": "2026년 8월 8일 토요일, 오전 11시",
+    "place": "구미 더 펠리즈 레몬트리홀",
+    "address": "경북 구미시 칠성로 99 2층"
+  },
+  "parents": {
+    "father": {
+      "name": "정국영"
+    },
+    "mother": {
+      "name": "박미성"
+    }
+  },
+  "message": [
+    "온유가 무럭무럭 자라",
+    "어느덧 첫 번째 생일을 맞았습니다.",
+    "사랑과 관심으로 온유를 지켜봐주신",
+    "소중한 분들과 온유의 첫생일을 함께 하고 싶어",
+    "작은 자리를 마련하였습니다.",
+    "발걸음하여 함께 축하해 주신다면 감사하겠습니다."
+  ],
+  "images": {
+    "introBaby": "Image_baby.png",
+    "messageLeft": "baby1.jpg",
+    "messageRight": "baby2.jpg",
+    "preview": "preview.jpg"
+  },
+  "thanks": "온유의 첫돌을<br>축하해 주셔서 감사합니다."
+}

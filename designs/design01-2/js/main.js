@@ -225,8 +225,10 @@ function copyText(text) {
    8. 주소 복사
 ========================= */
 function copyAddress() {
+  if (!invitationData) return;
+
   copyToClipboard(
-    "서울 광진구 워커힐로 177 워커힐 호텔앤리조트",
+    invitationData.event.address,
     "주소가 복사되었습니다."
   );
 }
@@ -280,9 +282,8 @@ function applyInvitationData(data) {
 
   // 서브 문구
   const babySub = document.getElementById("babySub");
-  if (babySub && data.baby && data.baby.name) {
-    babySub.innerHTML =
-      "1년 동안 건강하게 자라준 " + data.baby.name + "이의<br>첫 번째 생일을 축하해 주세요.";
+  if (babySub && data.baby && data.baby.subText) {
+   babySub.innerHTML = data.baby.subText;
   }
 
   // 메인 아기사진
@@ -333,11 +334,6 @@ function applyInvitationData(data) {
     eventFullDate.textContent = data.event.fullDate;
   }
 
-  // 달력 이미지
-  const calendarImage = document.getElementById("calendarImage");
-  if (calendarImage && data.images && data.images.calendar) {
-    calendarImage.src = "./img/" + data.images.calendar;
-  }
 
   // 장소 안내
   const eventPlace2 = document.getElementById("eventPlace2");
