@@ -758,3 +758,14 @@ body {
   height: auto;
   margin: 0 auto;
 }
+
+/* =========================
+   첫 화면 로딩 완료 후 표시
+========================= */
+html:not(.page-ready) body {
+  visibility: hidden;
+}
+
+html.page-ready body {
+  visibility: visible;
+}

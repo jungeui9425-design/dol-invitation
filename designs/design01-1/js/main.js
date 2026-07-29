@@ -263,8 +263,6 @@ function copyInviteLink() {
 }
 
 
-
-
 /* =========================
    JSON 데이터 불러오기
 ========================= */
@@ -278,14 +276,32 @@ function loadInvitationData() {
 
       // 브라우저 탭 제목 변경
       if (data.page && data.page.title) {
-      document.title = data.page.title;
+        document.title = data.page.title;
       }
 
-     applyInvitationData(data);
-     initJsonGallery(data);
+      applyInvitationData(data);
+      initJsonGallery(data);
+
+      const fontsReady = document.fonts
+        ? Promise.all([
+            document.fonts.load("normal 1em Cafe24GoodNight"),
+            document.fonts.load("300 1em KoPubBatangLight")
+          ])
+        : Promise.resolve();
+
+      return Promise.all([
+        fontsReady,
+        waitForImage("introBaby")
+      ]);
+    })
+    .then(function () {
+      document.documentElement.classList.add("page-ready");
     })
     .catch(function (error) {
       console.error("data.json을 불러오지 못했습니다.", error);
+
+      // 오류가 생겨도 화면은 표시
+      document.documentElement.classList.add("page-ready");
     });
 }
 
