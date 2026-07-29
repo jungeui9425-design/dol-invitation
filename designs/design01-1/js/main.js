@@ -1,23 +1,17 @@
 let invitationData = null;
-let customerId = "sample01-1";
-
-const params = new URLSearchParams(window.location.search);
-if (params.get("c")) {
-  customerId = params.get("c");
-}
 
 function customerImg(filename) {
-  return "../../customers/" + customerId + "/img/" + filename;
+  return "./img/" + filename;
 }
 
 function setText(id, text) {
   const el = document.getElementById(id);
-  if (el && text) el.textContent = text;
+  if (el && text != null) el.textContent = text;
 }
 
 function setHTML(id, html) {
   const el = document.getElementById(id);
-  if (el && html) el.innerHTML = html;
+  if (el && html != null) el.innerHTML = html;
 }
 
 function setImage(id, filename) {
@@ -272,7 +266,7 @@ function copyInviteLink() {
    JSON 데이터 불러오기
 ========================= */
 function loadInvitationData() {
-  fetch("../../customers/" + customerId + "/data.json")
+  fetch("./data.json")
     .then(function (response) {
       return response.json();
     })
@@ -322,8 +316,8 @@ function applyInvitationData(data) {
      data.baby.subText
     );
 
-  setText("eventDate", data.event.date + ", " + data.event.time);
-  setText("eventFullDate", data.event.date + ", " + data.event.time);
+  setText("eventDate", data.event.fullDate);
+  setText("eventFullDate", data.event.fullDate);
   setText("eventPlace", data.event.place);
   setText("eventPlace2", data.event.place);
   setText("eventAddress", data.event.address);

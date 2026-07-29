@@ -1,0 +1,53 @@
+{
+  "page": {
+    "title": "도진이의 첫돌"
+  },
+  "baby": {
+  "name": "도진",
+  "title": "도진이의 첫돌",
+  "subText": "1년 동안 건강하게 자라준 도진이의<br>첫 번째 생일을 축하해 주세요."
+  },
+  "event": {
+    "fullDate": " 2026년 8월 9일(일), 오전 11시",
+    "date": "2026년 8월 9일(일)",
+    "place": "로즈오브샤론 플라워 스튜디오",
+    "address": "경기 안양시 만안구 예술공원로 153-46 2층"
+  },
+  "parents": {
+    "father": {
+      "name": "김재헌",
+      "phone": "",
+      "account": ""
+    },
+    "mother": {
+      "name": "최현영",
+      "phone": "",
+      "account": ""
+    }
+  },
+  "message": [
+    "도진이가 무럭무럭 자라",
+    "어느덧 첫 번째 생일을 맞았습니다.",
+    "사랑과 관심으로 도진이를 지켜봐주신",
+    "소중한 분들과 도진이의 첫생일을 함께 하고 싶어",
+    "작은 자리를 마련하였습니다.",
+    "발걸음하여 함께 축하해 주신다면 감사하겠습니다."
+  ],
+  "images": {
+    "introBaby": "intro-baby.png",
+    "messageLeft": "baby1.jpg",
+    "messageRight": "baby2.jpg",
+    "gallery": [
+      "baby01.jpg",
+      "baby02.jpg",
+      "baby03.jpg",
+      "baby04.jpg",
+      "baby05.jpg",
+      "baby06.jpg",
+      "baby07.jpg",
+      "baby08.jpg"
+    ],
+    "preview": "preview.jpg"
+  },
+  "thanks": "도진이의 첫돌을<br>축하해 주셔서 감사합니다."
+}
