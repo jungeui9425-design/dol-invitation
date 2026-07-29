@@ -769,3 +769,21 @@ html:not(.page-ready) body {
 html.page-ready body {
   visibility: visible;
 }
+
+/* =========================
+   첫 화면 준비 완료 후 모션 시작
+========================= */
+html:not(.page-ready) .hero-item.show {
+  opacity: 0;
+  transform: translateY(25px);
+}
+
+html:not(.page-ready) .baby-main.hero-item.show {
+  opacity: 0;
+  transform: translateX(-50%) translateY(25px);
+}
+
+html:not(.page-ready) .hero-info.show {
+  opacity: 0;
+  transform: translateY(20px);
+}
