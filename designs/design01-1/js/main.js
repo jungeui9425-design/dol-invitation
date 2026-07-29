@@ -71,39 +71,44 @@ if (musicBtn && bgm) {
 }
 
   /* =========================
-     2. 메인 첫 화면 등장
-  ========================= */
+   2. 메인 첫 화면 등장
+========================= */
+function startHeroMotion() {
   const heroItems = document.querySelectorAll(".hero-item");
 
-heroItems.forEach(function(item, index) {
+  heroItems.forEach(function (item, index) {
+    let delay = 0;
 
-  let delay = 0;
+    if (index === 0) {
+      delay = 200;
+    }
+    else if (index === 1 || index === 2) {
+      delay = 400;
+    }
+    else {
+      delay = 400 + ((index - 2) * 180);
+    }
 
-  if(index === 0){
-    delay = 200;
-  }
-  else if(index === 1 || index === 2){
-    delay = 400;
-  }
-  else{
-    delay = 400 + ((index - 2) * 180);
-  }
-
-  setTimeout(function(){
-    item.classList.add("show");
-  }, delay);
-
-});
-
-const heroInfos = document.querySelectorAll(".hero-info");
-
-setTimeout(function () {
-
-  heroInfos.forEach(function(info){
-    info.classList.add("show");
+    setTimeout(function () {
+      item.classList.add("show");
+    }, delay);
   });
 
-}, 2200);
+  const heroInfos = document.querySelectorAll(".hero-info");
+
+  setTimeout(function () {
+    heroInfos.forEach(function (info) {
+      info.classList.add("show");
+    });
+  }, 2200);
+}
+
+if (document.documentElement.classList.contains("page-ready")) {
+  startHeroMotion();
+}
+else {
+  document.addEventListener("pageReady", startHeroMotion, { once: true });
+}
     
   /* =========================
      3. 스크롤 등장
@@ -296,12 +301,14 @@ function loadInvitationData() {
     })
     .then(function () {
       document.documentElement.classList.add("page-ready");
+      document.dispatchEvent(new Event("pageReady"));
     })
     .catch(function (error) {
       console.error("data.json을 불러오지 못했습니다.", error);
 
       // 오류가 생겨도 화면은 표시
       document.documentElement.classList.add("page-ready");
+      document.dispatchEvent(new Event("pageReady"));
     });
 }
 
