@@ -3,21 +3,26 @@
 ========================= */
 @font-face {
   font-family: 'Cafe24GoodNight';
-  src: url('../font/Cafe24Oneprettynight-v2.0.otf') format('opentype');
+  src: url('../font/Cafe24Oneprettynight-v2.0.woff2') format('woff2');
   font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'KoPubBatangLight';
-  src: url('../font/KoPubWorld Batang_Pro Light.otf') format('opentype');
+  src: url('../font/KoPubBatang-Light.woff2') format('woff2');
   font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
-
 
 @font-face {
   font-family: 'NotoSansKR-Regular';
-  src: url('../font/NotoSansKR-Regular.ttf') format('opentype');
+  src: url('../font/NotoSansKR-Regular.ttf') format('truetype');
   font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 
@@ -750,4 +755,32 @@ body {
   max-width: 300px;
   height: auto;
   margin: 0 auto;
+}
+
+
+/* =========================
+   첫 화면 준비 완료 후 표시
+========================= */
+html:not(.page-ready) body {
+  visibility: hidden;
+}
+
+html.page-ready body {
+  visibility: visible;
+}
+
+/* 첫 화면 준비 완료 후 모션 시작 */
+html:not(.page-ready) .hero-item.show {
+  opacity: 0;
+  transform: translateY(25px);
+}
+
+html:not(.page-ready) .baby-main.hero-item.show {
+  opacity: 0;
+  transform: translateX(-50%) translateY(25px);
+}
+
+html:not(.page-ready) .hero-info.show {
+  opacity: 0;
+  transform: translateY(20px);
 }
