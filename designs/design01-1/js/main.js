@@ -1,5 +1,26 @@
 let invitationData = null;
 
+function waitForImage(id) {
+  return new Promise(function (resolve) {
+    const img = document.getElementById(id);
+
+    if (!img || !img.src) {
+      resolve();
+      return;
+    }
+
+    if (img.complete && img.naturalWidth > 0) {
+      resolve();
+      return;
+    }
+
+    img.addEventListener("load", resolve, { once: true });
+    img.addEventListener("error", resolve, { once: true });
+
+    setTimeout(resolve, 3000);
+  });
+}
+
 function customerImg(filename) {
   return "./img/" + filename;
 }
