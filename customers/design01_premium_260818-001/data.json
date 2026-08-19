@@ -1,0 +1,60 @@
+{
+  "page": {
+    "title": "지훈이의 첫돌"
+  },
+  "baby": {
+  "name": "지훈",
+  "title": "지훈이의 첫돌",
+  "subText": "1년 동안 건강하게 자라준 지훈이의<br>첫 번째 생일을 축하해 주세요."
+  },
+  "event": {
+    "fullDate": " 2026년 8월 29일(토), 오후 6시30분",
+    "date": "2026년 8월 29일(토)",
+    "place": "플로렌스 오목교점",
+    "address": "서울 영등포구 영등포로 33 목동비즈타워 8층 플로렌스 오목교점"
+  },
+  "parents": {
+    "father": {
+      "name": "박건우",
+      "phone": "010-6347-3927",
+      "account": ""
+    },
+    "mother": {
+      "name": "안진영",
+      "phone": "010-2482-9352",
+      "account": ""
+    }
+  },
+  "message": [
+    "지훈이가 무럭무럭 자라",
+    "어느덧 첫 번째 생일을 맞았습니다.",
+    "사랑과 관심으로 지훈를 지켜봐주신",
+    "소중한 분들과 지훈의 첫생일을 함께 하고 싶어",
+    "작은 자리를 마련하였습니다.",
+    "발걸음하여 함께 축하해 주신다면 감사하겠습니다."
+  ],
+  "images": {
+    "introBaby": "intro-baby.png",
+    "messageLeft": "baby1.jpg",
+    "messageRight": "baby2.jpg",
+    "gallery": [
+      "baby01.jpg",
+      "baby02.jpg",
+      "baby03.jpg",
+      "baby04.jpg",
+      "baby05.jpg",
+      "baby06.jpg",
+      "baby07.jpg",
+      "baby08.jpg",
+      "baby09.jpg",
+      "baby10.jpg",
+      "baby11.jpg",
+      "baby12.jpg",
+      "baby13.jpg",
+      "baby14.jpg",
+      "baby15.jpg"
+    ],
+    "preview": "preview.jpg"
+  },
+  "thanks": "지훈이의 첫돌을<br>축하해 주셔서 감사합니다."
+}
